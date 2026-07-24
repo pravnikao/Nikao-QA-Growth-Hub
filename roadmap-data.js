@@ -144,7 +144,7 @@ window.NIKAO_ROADMAP = {
               "section": "Free YouTube",
               "provider": "The Testing Academy",
               "title": "Playwright with JavaScript",
-              "url": "https://www.youtube.com/@TheTestingAcademy",
+              "url": "https://www.youtube.com/channel/UC2TpiJFaC0f4_5GopyMkDdQ",
               "type": "video",
               "isFree": true
             },
@@ -773,14 +773,32 @@ window.NIKAO_ROADMAP = {
           "body": "ISTQB",
           "level": "Foundation",
           "description": "The mandatory entry point into the ISTQB scheme and prerequisite for every Advanced, Specialist and Expert certification. Covers core testing terminology, the test process and static/dynamic techniques.",
-          "url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"
+          "url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+          "requiredSkills": [
+            "testing fundamentals",
+            "test process",
+            "static testing",
+            "test analysis and design",
+            "test management basics",
+            "defect management",
+            "test tools"
+          ]
         },
         {
           "name": "ISTQB Certified Tester Advanced Level Test Analyst (CTAL-TA) v4.0",
           "body": "ISTQB",
           "level": "Advanced",
           "description": "Builds on CTFL with structured, thorough test design and execution skills across the software development lifecycle.",
-          "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst/"
+          "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-analyst/",
+          "requiredSkills": [
+            "risk-based testing",
+            "test analysis and design",
+            "functional testing",
+            "usability testing",
+            "compatibility testing",
+            "defect prevention",
+            "test documentation quality"
+          ]
         }
       ]
     },
@@ -793,14 +811,24 @@ window.NIKAO_ROADMAP = {
           "body": "ISTQB",
           "level": "Advanced",
           "description": "For engineers implementing or improving test automation. Covers automation architecture, tool selection and framework design principles that apply directly to Selenium and Playwright work.",
-          "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-automation-engineering-ctal-tae-v2-0/"
+          "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-automation-engineering-ctal-tae-v2-0/",
+          "requiredSkills": [
+            "automation architecture",
+            "tool selection",
+            "framework design",
+            "CI/CD integration",
+            "test maintainability",
+            "reporting",
+            "continuous improvement"
+          ]
         },
         {
           "name": "ISTQB Certified Tester Test Automation Strategy (CT-TAS)",
           "body": "ISTQB",
           "level": "Specialist",
           "description": "Focused on planning and justifying an automation strategy — useful alongside CTAL-TAE for anyone building or scaling a framework, not just operating one.",
-          "url": "https://istqb.org/certifications/certified-tester-test-automation-strategy-ct-tas/"
+          "url": "https://istqb.org/certifications/certified-tester-test-automation-strategy-ct-tas/",
+          "requiredSkills": []
         }
       ]
     },
@@ -813,7 +841,16 @@ window.NIKAO_ROADMAP = {
           "body": "Postman",
           "level": "Free",
           "description": "Postman's own free learning path covering request construction, test scripting and Newman/CLI automation, with a completion badge issued through Credly. Note: Postman retired its older paid, proctored exam in March 2026 — this free path is now the official route.",
-          "url": "https://academy.postman.com/"
+          "url": "https://academy.postman.com/",
+          "requiredSkills": [
+            "API fundamentals",
+            "collections",
+            "test scripting",
+            "Postman sandbox",
+            "collection runner",
+            "CLI automation",
+            "reusable tests"
+          ]
         }
       ]
     },
@@ -826,7 +863,15 @@ window.NIKAO_ROADMAP = {
           "body": "ISTQB",
           "level": "Specialist",
           "description": "Purpose-built for testers embedding quality and test activities into DevOps and CI/CD pipelines — directly matches this category's shift-left focus.",
-          "url": "https://istqb.org/certifications/certified-tester-quality-in-devops-ct-qdo/"
+          "url": "https://istqb.org/certifications/certified-tester-quality-in-devops-ct-qdo/",
+          "requiredSkills": [
+            "shift-left testing",
+            "quality engineering",
+            "DevOps collaboration",
+            "CI/CD pipeline integration",
+            "test automation in delivery pipelines",
+            "quality gates"
+          ]
         }
       ]
     },
@@ -839,7 +884,15 @@ window.NIKAO_ROADMAP = {
           "body": "ISTQB",
           "level": "Specialist",
           "description": "Covers the principal technical and organisational aspects of performance testing — planning, execution, analysis and reporting, tool-agnostic.",
-          "url": "https://istqb.org/certifications/certified-tester-performance-testing-ct-pt/"
+          "url": "https://istqb.org/certifications/certified-tester-performance-testing-ct-pt/",
+          "requiredSkills": [
+            "performance testing basics",
+            "metrics analysis",
+            "test environment requirements",
+            "load patterns",
+            "bottleneck identification",
+            "performance reporting"
+          ]
         }
       ]
     },
@@ -852,21 +905,39 @@ window.NIKAO_ROADMAP = {
           "body": "ISTQB",
           "level": "Specialist",
           "description": "Testing-focused security certification: planning, performing and evaluating security tests from risk, requirements and vulnerability perspectives — the natural next step after OWASP Top 10 material.",
-          "url": "https://istqb.org/certifications/certified-tester-security-tester-ct-sec/"
+          "url": "https://istqb.org/certifications/certified-tester-security-tester-ct-sec/",
+          "requiredSkills": []
         },
         {
           "name": "OffSec OSCP (OffSec Certified Professional)",
           "body": "OffSec",
           "level": "Practical / hands-on",
           "description": "The hands-on gold standard for penetration testing: a 24-hour practical exam compromising live machines plus a written report. No multiple choice. Best for hands-on learners aiming at penetration-testing roles.",
-          "url": "https://www.offsec.com/courses/pen-200/"
+          "url": "https://www.offsec.com/courses/pen-200/",
+          "requiredSkills": [
+            "reconnaissance",
+            "exploitation",
+            "privilege escalation",
+            "web application security",
+            "network security",
+            "report writing",
+            "practical pentesting"
+          ]
         },
         {
           "name": "EC-Council Certified Ethical Hacker (CEH v13)",
           "body": "EC-Council",
           "level": "Knowledge-based",
           "description": "Broader, more beginner-friendly ethical hacking credential (125 multiple-choice questions). Widely recognised by HR/compliance filters and a common on-ramp before attempting OSCP.",
-          "url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/"
+          "url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/",
+          "requiredSkills": [
+            "ethical hacking fundamentals",
+            "security assessment",
+            "attack surfaces",
+            "vulnerability identification",
+            "security tools",
+            "security compliance awareness"
+          ]
         }
       ]
     },
@@ -879,14 +950,22 @@ window.NIKAO_ROADMAP = {
           "body": "ISTQB",
           "level": "Specialist",
           "description": "Focused on testing AI-based systems themselves — machine learning models and generative AI systems — rather than using AI as a testing tool.",
-          "url": "https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/"
+          "url": "https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/",
+          "requiredSkills": [
+            "AI system testing",
+            "ML model validation",
+            "generative AI risk awareness",
+            "test design for AI systems",
+            "bias and data considerations"
+          ]
         },
         {
           "name": "ISTQB Certified Tester Testing with Generative AI (CT-GenAI)",
           "body": "ISTQB",
           "level": "Specialist",
           "description": "The complementary certification to CT-AI: applying LLMs and generative AI tools to generate test cases, test data and improve the testing process itself. Requires CTFL as a prerequisite.",
-          "url": "https://istqb.org/certifications/gen-ai/"
+          "url": "https://istqb.org/certifications/gen-ai/",
+          "requiredSkills": []
         }
       ]
     },
@@ -899,21 +978,38 @@ window.NIKAO_ROADMAP = {
           "body": "ISTQB",
           "level": "Advanced",
           "description": "For test leads and managers: planning, estimation, risk management and stakeholder reporting at programme level.",
-          "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-management-ctal-tm-v3-0/"
+          "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-management-ctal-tm-v3-0/",
+          "requiredSkills": [
+            "test planning",
+            "estimation",
+            "risk management",
+            "stakeholder reporting",
+            "test strategy",
+            "team leadership"
+          ]
         },
         {
           "name": "ISTQB Certified Tester Agile Test Leadership at Scale (CT-ATLaS)",
           "body": "ISTQB",
           "level": "Specialist",
           "description": "Organising and improving quality practices across multiple Agile teams — built for leaders operating at scale rather than within a single team.",
-          "url": "https://istqb.org/certifications/certified-tester-agile-test-leadership-at-scale-ct-atlas/"
+          "url": "https://istqb.org/certifications/certified-tester-agile-test-leadership-at-scale-ct-atlas/",
+          "requiredSkills": []
         },
         {
           "name": "ICAgile Certified Professional in Agile Testing (ICP-TST)",
           "body": "ICAgile",
           "level": "Course-based",
           "description": "A knowledge-based credential earned via an ICAgile-accredited live course rather than a standalone exam — covers the agile tester mindset, whole-team collaboration and agile test strategy.",
-          "url": "https://www.icagile.com/certification/agile-testing"
+          "url": "https://www.icagile.com/certification/agile-testing",
+          "requiredSkills": [
+            "agile testing mindset",
+            "whole-team collaboration",
+            "agile test strategy",
+            "testing quadrants",
+            "ATDD",
+            "BDD"
+          ]
         }
       ]
     }

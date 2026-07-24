@@ -87,6 +87,7 @@ img { display: block; max-width: 100%; }
 .brand { display: flex; align-items: center; gap: var(--space-2); text-decoration: none; color: var(--fg-inverse); font-weight: var(--weight-bold); font-size: var(--text-h3); flex-shrink: 0; }
 .brand img { height: 36px; width: auto; }
 .site-header .brand { color: var(--fg-1); }
+.site-header .brand img { height: 26px; width: auto; }
 .nav-links { display: flex; align-items: center; gap: var(--space-2); flex: 1; }
 .nav-link {
   background: none; border: none; color: var(--fg-2);
@@ -133,8 +134,8 @@ img { display: block; max-width: 100%; }
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
-  background: radial-gradient(600px 320px at 85% 15%, rgba(0,191,143,.18), transparent 70%),
-              radial-gradient(500px 280px at 100% 100%, rgba(0,119,182,.22), transparent 70%);
+  background: radial-gradient(41.7% 69.3% at 85% 15%, rgba(0,191,143,.18), transparent 70%),
+              radial-gradient(34.7% 60.6% at 100% 100%, rgba(0,119,182,.22), transparent 70%);
   pointer-events: none;
 }
 .hero .container { position: relative; }
@@ -216,7 +217,7 @@ img { display: block; max-width: 100%; }
 .results-line { font-size: var(--text-body-sm); color: var(--fg-2); margin: 0 0 var(--space-4); }
 
 /* ---------- Resource cards ---------- */
-.resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-5); }
+.resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-5); }
 .resource-grid.single-col { grid-template-columns: 1fr; max-width: 620px; }
 .resource-card {
   background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
@@ -230,6 +231,8 @@ img { display: block; max-width: 100%; }
 }
 .badge.free { background: rgba(0,191,143,.12); color: #087a5c; border-color: transparent; }
 .badge.premium { background: rgba(0,119,182,.1); color: var(--nikao-ocean); border-color: transparent; }
+button.badge { background: none; }
+button.badge:hover { background: var(--surface-muted); border-color: var(--nikao-ocean); color: var(--nikao-ocean); }
 .resource-card h3 { font-size: 17px; margin-top: var(--space-1); }
 .resource-card .provider { font-size: var(--text-body-sm); color: var(--nikao-ocean); font-weight: var(--weight-semibold); }
 .resource-card .meta-line { font-size: var(--text-caption); color: var(--fg-2); margin-top: auto; }
@@ -238,7 +241,7 @@ img { display: block; max-width: 100%; }
 .resource-actions .action-button.secondary { flex: none; }
 
 /* ---------- Platform cards ---------- */
-.platform-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-4); }
+.platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4); }
 .platform-card {
   background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
   padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-2);
@@ -303,7 +306,7 @@ img { display: block; max-width: 100%; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: var(--space-6); align-items: start; }
 .footer-col { min-width: 0; }
 .site-footer .brand { gap: var(--space-3); }
-.site-footer .brand img { height: 40px; width: auto; }
+.site-footer .brand img { height: 32px; width: auto; }
 .site-footer .brand span { font-size: 26px; }
 .footer-heading { color: var(--fg-inverse); font-size: var(--text-h3); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); }
 .footer-address { color: var(--fg-inverse-muted); font-size: var(--text-body-sm); line-height: 1.6; }

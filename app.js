@@ -20,6 +20,20 @@
   }[char]));
   const slugify = value => String(value ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
   const typeLabel = type => ({ course: "Course", video: "Video", article: "Reference" }[type] || "Resource");
+  const looseMatch = (a, b) => {
+    const al = String(a ?? "").toLowerCase();
+    const bl = String(b ?? "").toLowerCase();
+    return !!al && !!bl && (al.includes(bl) || bl.includes(al));
+  };
+
+  function findSkillByLooseName(name) {
+    for (const category of categories) {
+      for (const skill of category.skills) {
+        if (looseMatch(skill.name, name)) return { category, skill };
+      }
+    }
+    return null;
+  }
 
   function findSkill(slug) {
     for (const category of categories) {
@@ -124,7 +138,7 @@
     ];
 
     let badgeNumber = 0;
-    qs("#skillDetailBody").innerHTML = sections.map(section => {
+    const sectionsHtml = sections.map(section => {
       const items = skill.resources.filter(r => r.section === section.key);
       if (!items.length) return "";
       badgeNumber += 1;
@@ -138,6 +152,22 @@
         </div>
       `;
     }).join("");
+
+    const relatedCerts = (data.certifications || [])
+      .flatMap(group => group.items)
+      .filter(item => (item.requiredSkills || []).some(tag => looseMatch(skill.name, tag)));
+
+    const relatedCertsHtml = relatedCerts.length ? `
+      <div class="section-label">
+        <span class="step-badge">${badgeNumber + 1}</span>
+        <h3>Related certifications</h3>
+      </div>
+      <div class="badges">
+        ${relatedCerts.map(item => `<button type="button" class="badge" data-nav="certifications">${escapeHtml(item.name)}</button>`).join("")}
+      </div>
+    ` : "";
+
+    qs("#skillDetailBody").innerHTML = sectionsHtml + relatedCertsHtml;
 
     navigate("skillDetail", { slug });
   }
@@ -181,6 +211,16 @@
             <div class="provider">${escapeHtml(item.body)}</div>
             <h4>${escapeHtml(item.name)}</h4>
             <p>${escapeHtml(item.description)}</p>
+            ${(item.requiredSkills || []).length ? `
+              <div class="badges skill-tags">
+                ${item.requiredSkills.map(tag => {
+                  const match = findSkillByLooseName(tag);
+                  return match
+                    ? `<button type="button" class="badge" data-skill-slug="${slugify(match.skill.name)}">${escapeHtml(tag)}</button>`
+                    : `<span class="badge">${escapeHtml(tag)}</span>`;
+                }).join("")}
+              </div>
+            ` : ""}
             <div class="resource-actions">
               <a class="action-button secondary" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">View certification</a>
             </div>
