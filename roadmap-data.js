@@ -738,28 +738,79 @@ window.NIKAO_ROADMAP = {
     {
       "level": "🔰 Beginner (0-1 Year)",
       "steps": [
-        "Test Fundamentals & Design → Start with ISTQB glossary + free YouTube",
-        "Selenium with Java/Python → Rahul Shetty or Naveen AutomationLabs",
-        "API Testing with Postman → FreeCodeCamp or Valentin Despa",
-        "Git & Basic CI/CD → TechWorld with Nana"
+        {
+          "title": "Test Fundamentals & Design",
+          "description": "Start with ISTQB glossary + free YouTube",
+          "skillName": "ISTQB Foundations & Testing Principles"
+        },
+        {
+          "title": "Selenium with Java/Python",
+          "description": "Rahul Shetty or Naveen AutomationLabs",
+          "skillName": "Selenium WebDriver"
+        },
+        {
+          "title": "API Testing with Postman",
+          "description": "FreeCodeCamp or Valentin Despa",
+          "skillName": "Postman & REST API Testing"
+        },
+        {
+          "title": "Git & Basic CI/CD",
+          "description": "TechWorld with Nana",
+          "skillName": "CI/CD Pipeline Integration"
+        }
       ]
     },
     {
       "level": "🚀 Intermediate (1-3 Years)",
       "steps": [
-        "Advanced Selenium Frameworks → Page Object Model + TestNG",
-        "Playwright or Cypress → Modern alternatives to Selenium",
-        "CI/CD Pipeline Integration → Jenkins/GitHub Actions",
-        "Performance Testing with k6 → Automation Step by Step"
+        {
+          "title": "Advanced Selenium Frameworks",
+          "description": "Page Object Model + TestNG",
+          "skillName": "Selenium WebDriver"
+        },
+        {
+          "title": "Playwright or Cypress",
+          "description": "Modern alternatives to Selenium",
+          "skillNames": [
+            "Playwright",
+            "Cypress"
+          ]
+        },
+        {
+          "title": "CI/CD Pipeline Integration",
+          "description": "Jenkins/GitHub Actions",
+          "skillName": "CI/CD Pipeline Integration"
+        },
+        {
+          "title": "Performance Testing with k6",
+          "description": "Automation Step by Step",
+          "skillName": "Performance Testing Fundamentals"
+        }
       ]
     },
     {
       "level": "🏆 Advanced (3+ Years)",
       "steps": [
-        "Security Testing → OWASP + ZAP Automation",
-        "AI-Assisted Testing → Prompt engineering + ML model testing",
-        "Test Leadership → Strategy, mentoring, stakeholder management",
-        "Performance Engineering → Root cause analysis, system optimization"
+        {
+          "title": "Security Testing",
+          "description": "OWASP + ZAP Automation",
+          "skillName": "OWASP Top 10 & Penetration Testing"
+        },
+        {
+          "title": "AI-Assisted Testing",
+          "description": "Prompt engineering + ML model testing",
+          "skillName": "ISTQB AI Testing"
+        },
+        {
+          "title": "Test Leadership",
+          "description": "Strategy, mentoring, stakeholder management",
+          "skillName": "Test Strategy & Management"
+        },
+        {
+          "title": "Test Observability",
+          "description": "Instrumenting pipelines and production systems so quality signals show up before users notice.",
+          "skillName": "Test Observability (OpenTelemetry)"
+        }
       ]
     }
   ],

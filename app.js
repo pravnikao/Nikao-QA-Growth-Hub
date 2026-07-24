@@ -44,6 +44,20 @@
     return null;
   }
 
+  function findSkillByExactName(name) {
+    for (const category of categories) {
+      for (const skill of category.skills) {
+        if (skill.name === name) return { category, skill };
+      }
+    }
+    return null;
+  }
+
+  function topResourceForSkill(skill) {
+    const bySection = section => skill.resources.find(r => r.section === section);
+    return bySection("Premium Courses") || bySection("Free YouTube") || bySection("Free References") || null;
+  }
+
   function navigate(page, opts = {}) {
     state.page = page;
     qsa(".page").forEach(el => el.classList.toggle("active", el.id === `${page}Page`));
@@ -233,15 +247,33 @@
   function renderPaths() {
     qs("#pathGrid").innerHTML = (data.learningPaths || []).map(path => `
       <article class="path-card">
-        <div class="card-kicker">Roadmap.sh style route</div>
         <h3>${escapeHtml(path.level || "Learning path")}</h3>
         ${(path.steps || []).map((step, index) => {
-          const [title, note] = step.split("→").map(s => s.trim());
+          const title = step.title || step;
+          const description = step.description || "";
+          const skillNames = step.skillNames || (step.skillName ? [step.skillName] : []);
+          const matches = skillNames.map(name => findSkillByExactName(name)).filter(Boolean);
+
+          const skillBlocksHtml = matches.map(({ skill }) => {
+            const resource = topResourceForSkill(skill);
+            return `
+              ${resource ? `
+                <p>${escapeHtml(resource.provider)} &mdash; ${escapeHtml(resource.title)}
+                  <a class="badge" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Start</a>
+                </p>
+              ` : ""}
+              <button type="button" class="card-link" data-skill-slug="${slugify(skill.name)}">View full skill &rarr;</button>
+            `;
+          }).join("");
+
           return `
             <div class="path-step">
               <span class="step-number">${index + 1}</span>
-              <div><strong>${escapeHtml(title || step)}</strong>
-              ${note ? `<p>${escapeHtml(note)}</p>` : ""}</div>
+              <div>
+                <strong>${escapeHtml(title)}</strong>
+                ${description ? `<p>${escapeHtml(description)}</p>` : ""}
+                ${skillBlocksHtml}
+              </div>
             </div>
           `;
         }).join("")}
