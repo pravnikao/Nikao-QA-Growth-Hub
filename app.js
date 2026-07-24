@@ -123,12 +123,14 @@
       { key: "Free References", label: "Free references" }
     ];
 
-    qs("#skillDetailBody").innerHTML = sections.map((section, index) => {
+    let badgeNumber = 0;
+    qs("#skillDetailBody").innerHTML = sections.map(section => {
       const items = skill.resources.filter(r => r.section === section.key);
       if (!items.length) return "";
+      badgeNumber += 1;
       return `
         <div class="section-label">
-          <span class="step-badge">${index + 1}</span>
+          <span class="step-badge">${badgeNumber}</span>
           <h3>${section.label}</h3>
         </div>
         <div class="resource-grid">
