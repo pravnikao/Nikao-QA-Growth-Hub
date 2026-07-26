@@ -50,9 +50,9 @@ window.NIKAO_ROADMAP = {
           "resources": [
             {
               "section": "Free YouTube",
-              "provider": "Angie Jones",
-              "title": "Angie Jones YouTube Channel",
-              "url": "https://www.youtube.com/@angiejones",
+              "provider": "Alan Richardson",
+              "title": "Alan Richardson Software Testing YouTube Channel",
+              "url": "https://www.youtube.com/watch?v=6Jnw1jMjSY4",
               "type": "video",
               "isFree": true
             },
