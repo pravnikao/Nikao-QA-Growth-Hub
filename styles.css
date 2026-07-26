@@ -1,4 +1,33 @@
 
+@font-face {
+  font-family: 'Area';
+  src: url('assets/fonts/area-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Area';
+  src: url('assets/fonts/area-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Area';
+  src: url('assets/fonts/area-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Area';
+  src: url('assets/fonts/area-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --nikao-aubergine: #160E2B;
   --nikao-aubergine-2: #1E1638;
