@@ -159,7 +159,15 @@ img { display: block; max-width: 100%; }
   position: relative; overflow: hidden;
   background: var(--surface-dark); color: var(--fg-inverse);
   padding: var(--space-8) 0;
-  background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 2px, transparent 2px 26px);
+  background-image: url('assets/pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background: rgba(22,14,43,.55);
+  pointer-events: none;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
