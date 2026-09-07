@@ -1,8 +1,9 @@
-# Nikao QA Growth Hub
+# Nikao Growth Hub
 
 A dependency-free, standalone HTML/CSS/JS learning hub. No login, no accounts,
 no saved progress, no integrations — just a browsable front end over the
-Complete QA & Test Engineering Learning Roadmap (July 2026).
+Complete QA & Test Engineering Learning Roadmap (July 2026) and the
+engineering team's learning roadmap.
 
 ## Run
 

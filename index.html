@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nikao QA Growth Hub — a curated testing and QA learning roadmap.">
-  <title>Nikao QA Growth Hub</title>
+  <meta name="description" content="Nikao Growth Hub — curated learning roadmaps for testing and engineering.">
+  <title>Nikao Growth Hub</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="#home" data-nav="home" aria-label="Nikao QA Growth Hub home">
+      <a class="brand" href="#home" data-nav="home" aria-label="Nikao Growth Hub home">
         <img src="assets/nikao-logo.svg" alt="Nikao">
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
@@ -24,6 +24,12 @@
       <button class="action-button accent small" data-nav="skills">Explore skills</button>
       <button class="mobile-menu" id="mobileMenuButton" aria-label="Open navigation">Menu</button>
     </div>
+    <div class="track-bar">
+      <div class="container track-bar-inner">
+        <span class="track-bar-label">Track</span>
+        <div class="track-switcher" id="trackSwitcher" role="group" aria-label="Select a track"></div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -32,9 +38,9 @@
       <div class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">QA growth hub</p>
-            <h1>Confidence in testing, built one skill at a time.</h1>
-            <p class="lead">Every course, video and reference in this hub is pulled directly from Nikao's Complete QA &amp; Test Engineering Learning Roadmap — nothing added, nothing invented.</p>
+            <p class="eyebrow" id="homeEyebrow">QA growth hub</p>
+            <h1 id="homeHeading">Confidence in testing, built one skill at a time.</h1>
+            <p class="lead" id="homeLead">Every course, video and reference in this hub is pulled directly from Nikao's Complete QA &amp; Test Engineering Learning Roadmap — nothing added, nothing invented.</p>
             <div class="hero-actions">
               <button class="action-button" data-nav="skills">Explore skills</button>
               <button class="action-button ghost" data-nav="library">Browse the library</button>
@@ -58,7 +64,7 @@
         <div class="skill-grid" id="homeCategories"></div>
       </div>
 
-      <section class="dark-section">
+      <section class="dark-section" id="homeValueSection">
         <div class="container">
           <p class="eyebrow">Why this exists</p>
           <h2 class="dark-section-heading">A single, honest map of where to learn testing — instead of forty open tabs.</h2>
@@ -89,7 +95,7 @@
         <div class="container">
           <p class="eyebrow">Skills catalogue</p>
           <h1>Explore skills</h1>
-          <p class="lead">Discover the areas of testing that interest you. Choose a category, then open a skill to see its resources.</p>
+          <p class="lead" id="skillsLead">Discover the areas of testing that interest you. Choose a category, then open a skill to see its resources.</p>
         </div>
       </div>
       <div class="container">
@@ -117,7 +123,7 @@
         <div class="container">
           <p class="eyebrow">Curated roadmap</p>
           <h1>Learning library</h1>
-          <p class="lead">Search and filter all 60 verified courses, videos and references in one place.</p>
+          <p class="lead" id="libraryLead">Search and filter all 60 verified courses, videos and references in one place.</p>
         </div>
       </div>
       <div class="container">
@@ -145,9 +151,9 @@
     <section id="pathsPage" class="page">
       <div class="hero compact">
         <div class="container">
-          <p class="eyebrow">Quick reference</p>
+          <p class="eyebrow" id="pathsEyebrow">Quick reference</p>
           <h1>Choose your learning path</h1>
-          <p class="lead">Three experience-based routes, taken directly from the roadmap's quick-reference section.</p>
+          <p class="lead" id="pathsLead">Three experience-based routes, taken directly from the roadmap's quick-reference section.</p>
         </div>
       </div>
       <div class="container">
@@ -159,9 +165,9 @@
     <section id="certificationsPage" class="page">
       <div class="hero compact">
         <div class="container">
-          <p class="eyebrow">Researched, not guessed</p>
+          <p class="eyebrow" id="certsEyebrow">Researched, not guessed</p>
           <h1>Certifications worth pursuing</h1>
-          <p class="lead">One or two credentials per category, checked against official certifying-body sites (ISTQB, OffSec, EC-Council, Postman, ICAgile) rather than course marketplaces. Each links to the certifying body directly, not a training vendor.</p>
+          <p class="lead" id="certsLead">One or two credentials per category, checked against official certifying-body sites (ISTQB, OffSec, EC-Council, Postman, ICAgile) rather than course marketplaces. Each links to the certifying body directly, not a training vendor.</p>
         </div>
       </div>
       <div class="container">
@@ -181,7 +187,7 @@
       <div class="container">
         <div class="section-label"><h3>Free platforms</h3></div>
         <div class="platform-grid" id="freePlatformGrid"></div>
-        <div class="section-label"><h3>Premium subscriptions</h3></div>
+        <div class="section-label" id="premiumPlatformLabel"><h3>Premium subscriptions</h3></div>
         <div class="platform-grid" id="premiumPlatformGrid" style="margin-bottom:var(--space-8)"></div>
       </div>
     </section>

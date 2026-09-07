@@ -1,0 +1,447 @@
+{
+ "categories": [
+  {
+   "name": "Cloud",
+   "accent": "ocean",
+   "description": "Cloud skills and resources for engineering career development.",
+   "displayOrder": 1,
+   "skills": [
+    {
+     "name": "Azure Cloud",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "Introduction to Cloud Infrastructure: Describe Cloud Concepts - Training | Microsoft Learn",
+       "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 4,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    },
+    {
+     "name": "AWS Cloud",
+     "displayOrder": 2,
+     "resources": [
+      {
+       "title": "AWS Skill Builder",
+       "url": "https://skillbuilder.aws/learn/K8C2FNZM6X/aws-technical-essentials/N7Q3SXQCDY",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 3,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Web Fundamentals",
+   "accent": "teal",
+   "description": "Web Fundamentals skills and resources for engineering career development.",
+   "displayOrder": 2,
+   "skills": [
+    {
+     "name": "Web Fundamentals",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "Learn HTML Course | Codecademy",
+       "url": "https://www.codecademy.com/learn/learn-html",
+       "level": "Intern Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      },
+      {
+       "title": "Learn CSS Course | Codecademy",
+       "url": "https://www.codecademy.com/learn/learn-css",
+       "level": "Intern Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      },
+      {
+       "title": "Learn JavaScript Course | Codecademy",
+       "url": "https://www.codecademy.com/enrolled/courses/introduction-to-javascript",
+       "level": "Intern Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      },
+      {
+       "title": "What is HTTP Article",
+       "url": "https://www.freecodecamp.org/news/what-is-http/",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 1,
+       "type": "article",
+       "isFree": true
+      },
+      {
+       "title": "What Is JWT and Why Should You Use JWT (Video)",
+       "url": "https://www.youtube.com/watch?v=7Q17ubqLfaM",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 1,
+       "type": "video",
+       "isFree": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Web Backend",
+   "accent": "lime",
+   "description": "Web Backend skills and resources for engineering career development.",
+   "displayOrder": 3,
+   "skills": [
+    {
+     "name": "PHP",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "Learn PHP: Introduction | Codecademy",
+       "url": "https://www.codecademy.com/learn/learn-php-introduction",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      },
+      {
+       "title": "Laravel 11 Tutorial for Beginners - Laravel Crash Course (2024) (Video)",
+       "url": "https://www.youtube.com/watch?v=eUNWzJUvkCA",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "video",
+       "isFree": true
+      },
+      {
+       "title": "Learn Symfony in 1 Hour (Video)",
+       "url": "https://www.youtube.com/watch?v=i_jgWZItCGI",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "video",
+       "isFree": true
+      }
+     ]
+    },
+    {
+     "name": "ASP.Net",
+     "displayOrder": 2,
+     "resources": [
+      {
+       "title": "Learn ASP.NET | Codecademy",
+       "url": "https://www.codecademy.com/learn/learn-asp-net",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Programming Languages",
+   "accent": "ocean",
+   "description": "Programming Languages skills and resources for engineering career development.",
+   "displayOrder": 4,
+   "skills": [
+    {
+     "name": "C#",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "Learn C# | Codecademy",
+       "url": "https://www.codecademy.com/learn/learn-c-sharp",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    },
+    {
+     "name": "Coding Fundamentals",
+     "displayOrder": 2,
+     "resources": []
+    }
+   ]
+  },
+  {
+   "name": "Web Front End",
+   "accent": "teal",
+   "description": "Web Front End skills and resources for engineering career development.",
+   "displayOrder": 5,
+   "skills": [
+    {
+     "name": "Web Front End - React",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "React Tutorial for Beginners (Video)",
+       "url": "https://www.youtube.com/watch?v=SqcY0GlETPk",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "video",
+       "isFree": true
+      },
+      {
+       "title": "A (Mostly) Complete Guide to React Rendering Behavior",
+       "url": "https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "article",
+       "isFree": true
+      },
+      {
+       "title": "Understanding useMemo and useCallback",
+       "url": "https://www.joshwcomeau.com/react/usememo-and-usecallback/",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    },
+    {
+     "name": "Web Front End - Angular",
+     "displayOrder": 2,
+     "resources": [
+      {
+       "title": "Angular Tutorial for Beginners: Learn Angular & TypeScript (Video)",
+       "url": "https://www.youtube.com/watch?v=k5E2AVpwsko",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "video",
+       "isFree": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "DevOps",
+   "accent": "lime",
+   "description": "DevOps skills and resources for engineering career development.",
+   "displayOrder": 6,
+   "skills": [
+    {
+     "name": "DevOps - ADO",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "Azure DevOps Tutorial for Beginners | CI/CD with Azure Pipelines (Video)",
+       "url": "https://www.youtube.com/watch?v=4BibQ69MD8c",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "video",
+       "isFree": true
+      }
+     ]
+    },
+    {
+     "name": "DevOps - Jenkins",
+     "displayOrder": 2,
+     "resources": []
+    },
+    {
+     "name": "DevOps - Linear.ia",
+     "displayOrder": 3,
+     "resources": []
+    }
+   ]
+  },
+  {
+   "name": "AI",
+   "accent": "ocean",
+   "description": "AI skills and resources for engineering career development.",
+   "displayOrder": 7,
+   "skills": [
+    {
+     "name": "AI - General",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "AI Fluency",
+       "url": "https://learn.microsoft.com/en-gb/training/paths/ai-fluency/",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 4,
+       "type": "course",
+       "isFree": true
+      },
+      {
+       "title": "Career Essentials in Generative AI by Microsoft and LinkedIn",
+       "url": "https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 3,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Role Based",
+   "accent": "teal",
+   "description": "Role Based skills and resources for engineering career development.",
+   "displayOrder": 8,
+   "skills": [
+    {
+     "name": "Role Based - Developer",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "Azure Developer Associate self-paced training (MS official training)",
+       "url": "https://learn.microsoft.com/en-us/plans/z2okt18jm332xz",
+       "level": "Junior Engineer",
+       "mandatory": false,
+       "points": 5,
+       "type": "course",
+       "isFree": true
+      },
+      {
+       "title": "Azure Developer Associate certification (MS Official certification)",
+       "url": "https://learn.microsoft.com/en-us/plans/z2okt18jm332xz",
+       "level": "Mid-level Engineer",
+       "mandatory": false,
+       "points": 2,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Agile",
+   "accent": "lime",
+   "description": "Agile skills and resources for engineering career development.",
+   "displayOrder": 9,
+   "skills": [
+    {
+     "name": "Agile - General",
+     "displayOrder": 1,
+     "resources": [
+      {
+       "title": "Manifesto for Agile Software Development",
+       "url": "https://agilemanifesto.org/",
+       "level": "Intern Engineer",
+       "mandatory": false,
+       "points": 1,
+       "type": "course",
+       "isFree": true
+      },
+      {
+       "title": "Principles behind the Agile Manifesto",
+       "url": "https://agilemanifesto.org/principles.html",
+       "level": "Intern Engineer",
+       "mandatory": false,
+       "points": 1,
+       "type": "course",
+       "isFree": true
+      }
+     ]
+    },
+    {
+     "name": "Agile - Kanban",
+     "displayOrder": 2,
+     "resources": [
+      {
+       "title": "Kanban Guide",
+       "url": "https://www.prokanban.org/the-kanban-guide",
+       "level": "Intern Engineer",
+       "mandatory": false,
+       "points": 1,
+       "type": "article",
+       "isFree": true
+      }
+     ]
+    },
+    {
+     "name": "Agile - Scrum",
+     "displayOrder": 3,
+     "resources": [
+      {
+       "title": "Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "level": "Intern Engineer",
+       "mandatory": false,
+       "points": 1,
+       "type": "article",
+       "isFree": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Data Science",
+   "accent": "ocean",
+   "description": "Data Science skills and resources for engineering career development.",
+   "displayOrder": 10,
+   "skills": [
+    {
+     "name": "Data Science - ADF",
+     "displayOrder": 1,
+     "resources": []
+    },
+    {
+     "name": "Data Science - Databricks",
+     "displayOrder": 2,
+     "resources": []
+    }
+   ]
+  }
+ ],
+ "generalResources": [
+  {
+   "title": "Explore Career Paths on Microsoft Learn",
+   "url": "https://learn.microsoft.com/en-us/training/browse/",
+   "provider": "Microsoft Learn"
+  },
+  {
+   "title": "jherr YouTube Channel",
+   "url": "https://www.youtube.com/@jherr",
+   "provider": "jherr"
+  },
+  {
+   "title": "My World of Work - Digital Learning",
+   "url": "https://www.myworldofwork.co.uk/digital-learning",
+   "provider": "My World of Work"
+  },
+  {
+   "title": "Microsoft Learn - Browse Training",
+   "url": "https://learn.microsoft.com/en-us/training/browse/",
+   "provider": "Microsoft Learn"
+  }
+ ],
+ "roles": [
+  "Intern Engineer",
+  "Junior Engineer",
+  "Mid-level Engineer",
+  "Senior Engineer",
+  "Engineering Lead"
+ ]
+}
